@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>comida al instante</title>
+    <link rel="stylesheet" href="com.css">
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido servicio de delivery R&L</h1>
+</header>
+<nav>
+    <a href="#menu">Menú</a>
+    <a href="#carrito">Carrito</a>
+    <a href="#contacto">Contáctanos</a>
+    <a href="#pedido">Realiza tu Pedido</a>
+</nav>
+
+<div class="container" id="menu">
+    <h2>Menú de Comidas</h2>
+
+    
+    <section class="menu-section">
+        <h3>Comidas</h3>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="pizza.png" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>$10.00</p>
+                <button class="agregar" data-nombre="Pizza" data-precio="10.00">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="hamburguesa.webp" alt="Hamburguesa">
+                <h3>Hamburguesa</h3>
+                <p>$8.00</p>
+                <button class="agregar" data-nombre="Hamburguesa" data-precio="8.00">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="tacos.jpg" alt="Tacos">
+                <h3>Tacos</h3>
+                <p>$7.50</p>
+                <button class="agregar" data-nombre="Tacos" data-precio="7.50">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="menu-section">
+        <h3>Bebidas</h3>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="coca.jpg" alt="Coca Cola">
+                <h3>Coca-Cola</h3>
+                <p>$2.50</p>
+                <button class="agregar" data-nombre="Coca-Cola" data-precio="2.50">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="sprite.webp" alt="Sprite">
+                <h3>Sprite</h3>
+                <p>$2.50</p>
+                <button class="agregar" data-nombre="Sprite" data-precio="2.50">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="fanta.jpg" alt="Fanta">
+                <h3>Fanta</h3>
+                <p>$2.50</p>
+                <button class="agregar" data-nombre="Fanta" data-precio="2.50">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    >
+    <section class="menu-section">
+        <h3>Postres</h3>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="pastel.jpeg" alt="Pastel">
+                <h3>Pastel de Chocolate</h3>
+                <p>$4.00</p>
+                <button class="agregar" data-nombre="Pastel de Chocolate" data-precio="4.00">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="helado.jpg" alt="Helado">
+                <h3>Helado</h3>
+                <p>$3.00</p>
+                <button class="agregar" data-nombre="Helado" data-precio="3.00">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="flan.webp" alt="Flan">
+                <h3>Flan de Vainilla</h3>
+                <p>$2.50</p>
+                <button class="agregar" data-nombre="Flan de Vainilla" data-precio="2.50">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div class="container" id="carrito">
+    <h2>Carrito de Compras</h2>
+    <div class="carrito-content">
+        <table id="tabla-carrito">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se agregarán los productos del carrito -->
+            </tbody>
+        </table>
+        <div class="carrito-summary">
+            <p id="total">Total: $0.00</p>
+            <button id="realizar-pedido">Realizar Pedido</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes alguna duda o pregunta? ¡Estamos aquí para ayudarte!</p>
+    <div class="contact-info">
+        <p><strong>Email:</strong> contacto@delivery.com</p>
+        <p><strong>Teléfono:</strong> +591-74947256</p>
+    </div>
+</div>
+
+
+<div class="container" id="pedido">
+    <h2>Realiza tu Pedido</h2>
+    <form class="contact-form" action="#" method="POST">
+        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+        <input type="email" name="email" placeholder="Tu Email" required>
+        <input type="tel" name="telefono" placeholder="Tu Teléfono" required>
+        <textarea name="direccion" placeholder="Tu Dirección de Entrega" required></textarea>
+        <button type="submit">Realizar Pedido</button>
+    </form>
+</div>
+
+
+<footer>
+    <p>&copy; Limber Quispe Osco |Ricardo Maldonado Suarez</p>
+  <IMG src="lim.jpeg" height="150" width="150">
+  <IMG src="rick.jpeg" height="150" width="150">
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
